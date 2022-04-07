@@ -481,7 +481,7 @@ nav > ul > li > a:hover::after {
 /* number section */
 .numbers {
   position: relative;
-  background-image: url("/images/images/background/background2.webp");
+  background-image: url("../images/images/background/background2.webp");
   height: 300px;
   background-size: cover;
   background-attachment: fixed;
@@ -600,7 +600,7 @@ nav > ul > li > a:hover::after {
 }
 .testimonials {
   position: relative;
-  background-image: url("/images/images/background/background3.webp");
+  background-image: url("../images/images/background/background3.webp");
   height: 400px;
   background-size: cover;
   background-attachment: fixed;
