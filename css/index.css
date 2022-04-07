@@ -105,6 +105,7 @@ nav > ul > li > a:hover::after {
   height: 100vh;
   background-image: url(../images/images/background/background1.webp);
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 .home-content {
@@ -473,11 +474,160 @@ nav > ul > li > a:hover::after {
   background-color: rgb(55, 139, 187);
 }
 .service-bullets li:hover {
-  background-color: rgb(55, 139, 187);
+  background-color: #378bbb;
   cursor: pointer;
 }
 
-/* team section */
+/* number section */
+.numbers {
+  position: relative;
+  background-image: url("/images/images/background/background2.webp");
+  height: 300px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.card-numbers {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.card-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number-title,
+.number-text {
+  color: white;
+  margin: 10px 0;
+}
+/* price section */
+.price {
+  background-color: #f9f9f9;
+}
+.card-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #8a8a8a;
+  padding: 30px 70px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s ease-in-out;
+}
+.card-price:hover .price-value {
+  color: white;
+}
+.card-price:hover button {
+  background-color: #378bbb;
+  color: white;
+}
+.card-price:hover .price-title {
+  color: #378bbb;
+}
+/* .card-price::after {
+  width: 100%;
+  height: 0%;
+  content: "";
+  background-color: #333;
+  top: 0;
+  position: absolute;
+  transition: height .5s;
+  z-index: -1;
+}
+.card-price:hover::after {
+  height: 100%;
+} */
+
+.card-price-main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+.price-title {
+  text-transform: capitalize;
+  color: #7c7c7c;
+}
+.price-value {
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid #378bbb;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  padding: 30px;
+  margin: 50px auto;
+}
+.price-value span {
+  text-transform: uppercase;
+}
+.price-info {
+  list-style: none;
+  line-height: 1.5;
+  color: #7c7c7c;
+}
+.value {
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+.value span {
+  display: inline-block;
+  font-weight: bold;
+}
+.price button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #378bbb;
+  color: #378bbb;
+  text-transform: capitalize;
+}
+
+/* testimonials section */
+.main-testimonials{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+.testimonials {
+  position: relative;
+  background-image: url("/images/images/background/background3.webp");
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.testimonilas-avatar {
+  display: flex;
+  align-items: center;
+}
+.testimonilas-avatar img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.avatar-profession {
+  color: #378bbb;
+  display: block;
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+.testimonials-descr {
+  color: white;
+}
+.avatar-name {
+  padding-bottom: 5px;
+  color: white;
+  text-transform: capitalize;
+}
+
 /* blog section */
 /* contact section */
 
