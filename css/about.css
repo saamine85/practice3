@@ -1,0 +1,95 @@
+/* about section */
+.about-content {
+  text-align: center;
+  display: flex;
+  gap: 30px;
+}
+.mr-y {
+  margin-bottom: 15px;
+}
+.about-card {
+  background-color: #fdfdfd;
+  padding: 50px 15px;
+  border: 1px solid #d1d1d1;
+  z-index: 1;
+}
+.icon {
+
+  color: rgb(55, 139, 187);
+}
+.about-title {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  transition: color 0.5s;
+}
+.about-card:hover .about-title {
+  color: white;
+  cursor: pointer;
+}
+.about-descr {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #7c7c7c;
+}
+.about-more {
+  text-transform: capitalize;
+  color: rgb(55, 139, 187);
+  cursor: pointer;
+}
+.ltr-effect {
+  position: relative;
+}
+.ltr-effect::after {
+  position: absolute;
+  content: "";
+  background-color: #333;
+  width: 0%;
+  /* height: 20%; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: width 0.5s;
+  z-index: -1;
+}
+.ltr-effect:hover::after {
+  width: 100%;
+  cursor: pointer;
+}
+.ttb-effect {
+  position: relative;
+}
+.ttb-effect::after {
+  position: absolute;
+  content: "";
+  background-color: #333;
+  height: 0%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  transition: height 0.5s;
+  z-index: -1;
+}
+.ttb-effect:hover::after {
+  height: 100%;
+  cursor: pointer;
+}
+.rtl-effect {
+  position: relative;
+}
+.rtl-effect::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0%;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  transition: width 0.5s;
+  z-index: -1;
+}
+.rtl-effect:hover::after {
+  width: 100%;
+  cursor: pointer;
+}

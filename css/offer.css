@@ -1,0 +1,55 @@
+/* services section */
+.offer-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.offer-card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #8a8a8a;
+  position: relative;
+  cursor: pointer;
+}
+/* .offer-card::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: width 0.5s;
+  z-index: -1;
+}
+.offer-card:hover::after {
+  width: 100%;
+} */
+.offer-card:hover .offer-title {
+  color: white;
+}
+
+.offer-title {
+  text-transform: capitalize;
+  text-align: left;
+  margin: 0 0 10px;
+  transition: color 0.5s;
+  color: black;
+}
+.offer-descr {
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 10px;
+  color: #999;
+}
+.offer-card i {
+  font-size: 25px;
+  padding-top: 5px;
+  color: rgb(55, 139, 187);
+}

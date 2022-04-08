@@ -1,0 +1,86 @@
+/* portfolio section */
+.portfolio {
+  background-color: #f9f9f9;
+}
+.portfolio-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.portfolio-content img {
+  width: 100%;
+}
+.portfolio-card {
+  position: relative;
+  padding: 20px;
+}
+.category {
+  /* font-size: 1.7rem; */
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: rgb(55, 139, 187);
+  position: relative;
+  top: 10px;
+  transition: top 0.6s, opacity 0.6s, visibility 0.8s;
+  opacity: 0;
+
+  /* opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s .1, visibility 0.5s .1; */
+}
+.portfolio-card:hover .layer-title,
+.portfolio-card:hover .layer-content a,
+.portfolio-card:hover .category {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.layer-title {
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  transition: top 0.6s 0.3s, opacity 0.6s, visibility 0.8s;
+}
+.layer-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.portfolio-card:hover .layer-content {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.layer-info {
+  text-align: center;
+  position: absolute;
+  /* background-color: aqua; */
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.layer-info a {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  top: 10px;
+  transition: top 0.6s 0.5s, opacity 0.6s, visibility 0.8s;
+  opacity: 0;
+  visibility: hidden;
+}
+.layer-info a i {
+  background-color: rgb(55, 139, 187);
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
