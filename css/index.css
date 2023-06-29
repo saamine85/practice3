@@ -4,6 +4,9 @@
   box-sizing: border-box2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Varela Round", sans-serif;
 }
@@ -39,7 +42,7 @@ header {
   /* position:absolute; */
   margin-top: px;
   position: fixed;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   top: 0px;
   width: 100%;
   z-index: 9;
@@ -181,9 +184,6 @@ nav > ul > li > a:hover::after {
   color: #fff;
   display: block;
 }
-
-
-
 
 /* contact section */
 /* footer section */
